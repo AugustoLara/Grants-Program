@@ -3,15 +3,8 @@
 - **Project Name:** Afloat's Tax Infraestructure Polkadot Integration
 - **Team Name:** Afloat Inc.
 - **Payment Address:** BTC Louise to provide a BTC address
-
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-
-## Project Overview :page_facing_up:
-
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
 
 ### Overview
 
