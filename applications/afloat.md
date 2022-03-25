@@ -175,13 +175,13 @@ Afloat is partnering with Hashed Systems DAO LLC, a substrate development team w
 ### Milestone 1 — User onboarding (set and verify identity with gatekeeper parameters) and slides.
 - **Estimated duration:** 5 weeks
 - **FTE:**  2.5
-- **Costs:**  USD
+- **Costs:** 17,675 USD
 (5 contributors)
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | MIT |
-| 0b. | Documentation | We will provide **inline documentation** of the code and a basic **tutorial** that explains how a user can set and verify identity with gatekeeper parameters. |
+| 0b. | Documentation | We will provide **inline documentation** of the code and a basic **tutorial** of the modules delivered in this Milestone.|
 | 0c. | Testing | Unit testing will be applied to ensure reliability. Documentation of tests and results will be provided |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** in English and Spanish that explains what was built and how it can bennefit other projects
@@ -189,60 +189,51 @@ Afloat is partnering with Hashed Systems DAO LLC, a substrate development team w
 | 2. | Slides |1-3 additional presentation slides for Louise W. Reed, CPA’s currently scheduled talks at CPA conferences regarding blockchain, cryptocurrency, triple-entry accounting and transferring state tax credits.  The additional slides will be added to address why Afloat sees value in being supported by Polkadot’s ecosystem| 
 
 ### Milestone 2 — Originate and configure a tax credit and create sales order for tax credits.
-- **Estimated duration:** 5 weeks
+- **Estimated duration:** 4 weeks
 - **FTE:**  2.5
-- **Costs:**  USD
+- **Costs:** 14,140 USD
 (5 contributors)
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | MIT |
-| 0b. | Documentation | We will provide **inline documentation** of the code and a basic **tutorial** that explains how a user can set and verify identity with gatekeeper parameters. |
+| 0b. | Documentation | We will provide **inline documentation** of the code and a basic **tutorial** of the modules delivered in this Milestone.|
 | 0c. | Testing | Unit testing will be applied to ensure reliability. Documentation of tests and results will be provided |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** in English and Spanish that explains what was built and how it can bennefit other projects
-| 1. | Substrate Modules | 1. Web client for onboarding new tax credits as NFTs, including privacy preserving document storage. <br /> 
-2. Tax Credit (NFT) marketplace pallet (perhaps ability to re-use RMRK marketplace) <br /> 
-3. MVP Tax Credit pallet, compatible with the prebuilt Uniques pallet (and/or RMRK), supporting setup rules by jurisdiction. <br /> 
-4. Ability for Tax Credit (NFT) owner to assign a price and list it for sale.| 
+| 1. | Substrate Modules | 1. Web client for onboarding new tax credits as NFTs, including privacy preserving document storage. <br />2. Tax Credit (NFT) marketplace pallet (perhaps ability to re-use RMRK marketplace) <br />3. MVP Tax Credit pallet, compatible with the prebuilt Uniques pallet (and/or RMRK), supporting setup rules by jurisdiction. <br />4. Ability for Tax Credit (NFT) owner to assign a price and list it for sale.| 
 
 
 
 ### Milestone 3 — Sell the entire or a fraction of the tax credit to interested buyers using fruniques pallets.
-- **Estimated duration:** 5 weeks
+- **Estimated duration:** 2 weeks
 - **FTE:**  2.5
-- **Costs:**  USD
+- **Costs:** 7,070 USD
 (5 contributors)
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | MIT |
-| 0b. | Documentation | We will provide **inline documentation** of the code and a basic **tutorial** that explains how a user can set and verify identity with gatekeeper parameters. |
+| 0b. | Documentation | We will provide **inline documentation** of the code and a basic **tutorial** of the modules delivered in this Milestone. |
 | 0c. | Testing | Unit testing will be applied to ensure reliability. Documentation of tests and results will be provided |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** in English and Spanish that explains what was built and how it can bennefit other projects
-| 1. | Substrate Modules | 1. Web client and pallet support for fractionalizing a Tax Credit NFT. Users may specify the % and/or direct amount for the newly spawned NFT. <br />
-2. Web client for buyer to buy a listed Tax Credit NFT. <br />
-3. Ensure the marketplace correctly calculates appropriate commissions and fees.
-|  
+| 1. | Substrate Modules | 1. Web client and pallet support for fractionalizing a Tax Credit NFT. Users may specify the % and/or direct amount for the newly spawned NFT. <br />2. Web client for buyer to buy a listed Tax Credit NFT. <br />3. Ensure the marketplace correctly calculates appropriate commissions and fees.|  
 
 ### Milestone 4 — Redeem the tax credit and confirm redemption and freeze/burn asset on-chain.
-- **Estimated duration:** 5 weeks
+- **Estimated duration:** 2 weeks
 - **FTE:**  2.5
-- **Costs:**  USD
+- **Costs:** 7,070 USD
 (5 contributors)
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | MIT |
-| 0b. | Documentation | We will provide **inline documentation** of the code and a basic **tutorial** that explains how a user can set and verify identity with gatekeeper parameters. |
+| 0b. | Documentation | We will provide **inline documentation** of the code and a basic **tutorial** of the modules delivered in this Milestone.|
 | 0c. | Testing | Unit testing will be applied to ensure reliability. Documentation of tests and results will be provided |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** in English and Spanish that explains what was built and how it can bennefit other projects
-| 1. | Substrate Modules | 1. Pallet and web client for onboarding and approving/enrolling Tax Credit Redemption Specialists. <br />
-2. Pallet and web function/form for requesting redemption, optionally from a specific Redemption Specialist or system will choose. <br />
-3. Pallet and web client for Redemption Specialist to review tax credit materials and confirm that off-chain IRL redemption has been completed. Redemption completion approved by owner and Redemption specialist. <br />
-4. Pallet and web client for Tax Credit Asset Manager(s) to lock, freeze, and/or burn the NFT.|  
+| 1. | Substrate Modules | 1. Pallet and web client for onboarding and approving/enrolling Tax Credit Redemption Specialists. <br />2. Pallet and web function/form for requesting redemption, optionally from a specific Redemption Specialist or system will choose. <br />3. Pallet and web client for Redemption Specialist to review tax credit materials and confirm that off-chain IRL redemption has been completed. Redemption completion approved by owner and Redemption specialist. <br />4. Pallet and web client for Tax Credit Asset Manager(s) to lock, freeze, and/or burn the NFT.|  
  
 ## Future Plans
 
