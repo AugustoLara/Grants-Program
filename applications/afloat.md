@@ -152,7 +152,7 @@ Afloat is partnering with Hashed Systems DAO LLC, a substrate development team w
 - Graph data caching infraestructure to accelerate performance
 - [Double Entry accounting](https://us02web.zoom.us/rec/share/eRqiBvq-dsV0L_hEjW5e8DWNYQlUn2bLhI8-86jkRVwdXiN3TiD5edym17ubCd9R.QhKQw_Byy0t5_8SW?startTime=1647371674000) Passcode: .V$C#Br2
 
-https://joinseeds.earth/
+[SEED](https://joinseeds.earth/)
 - Smart contracts
 - [Economic Simulator](https://seeds-sim.hypha.earth/dashboard)
 - Mobile aplication
@@ -192,7 +192,7 @@ https://joinseeds.earth/
 | 0c. | Testing | Unit testing will be applied to ensure reliability. Documentation of tests and results will be provided |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** in English and Spanish that explains what was built and how it can bennefit other projects
-| 1. | Substrate Modules | 1. Comprehensive user onboarding web client for uploading identity details in a privacy preserving manner.<br />2. Extensions to Identity pallet, if necessary (configuration of registrars for `additional` field arrays)<br /> 3.Gatekeeper screen for viewing and approving new user (market participant) requests|
+| 1. | Substrate Modules | 1. Comprehensive user onboarding web client for uploading identity details in a privacy preserving manner.<br />2. Extensions to Identity pallet, if necessary (configuration of registrars for `additional` field arrays)<br /> 3. Gatekeeper screen for viewing and approving new user (market participant) requests|
 | 2. | Slides |1-3 additional presentation slides for Louise W. Reed, CPA’s currently scheduled talks at CPA conferences regarding blockchain, cryptocurrency, triple-entry accounting and transferring state tax credits.  The additional slides will be added to address why Afloat sees value in being supported by Polkadot’s ecosystem| 
 
 ### Milestone 2 — Originate and configure a tax credit and create sales order for tax credits.
