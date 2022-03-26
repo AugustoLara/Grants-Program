@@ -10,28 +10,26 @@
 
 [Afloat](https://stayafloat.io/#/) is one of the first real use-cases of blockchain technology in the accounting industry. It enables the fractional buying and selling of tax credits that historically have been inefficient, opaque and centralized. It has already processed tax credits ranging in orders from $2K -$70k USD.
 
-Afloat was built on a private Ethereum clone but wants to migrate to Polkadot due to it's technology, identity management and community. Parachains like Kilt and their identity services would be crucial at validating government roles and professional certifications like accountants and institutional sellers. This proposal covers the migration of the following blockchain components: 
+Afloat was built on a private Ethereum clone but wants to migrate to Polkadot due to it's technology, identity management and community. Parachains like Kilt and their identity services would be crucial at validating government roles and professional certifications like accountants and institutional sellers. This proposal covers the migration or creation of the following workflows: 
 
 1. User onboarding (set and verify identity with gatekeeper parameters) and slides. 
 2. Originate and configure a tax credit and create sales order for tax credits.
 3. Sell the entire or a fraction of the tax credit to interested buyers using fruniques pallets.
-4. Redeem the tax credit and confirm redemption and freeze/burn asset on-chain.
+4. Redeem the tax credit and confirm redemption and freeze asset on-chain.
 
 ## Project Details
 
 ### Background
 
-A common tax credit is for land preservation. The inhabitants of a geographic area recognize that their shared quality of life may be positively impacted if more land was preserved rather than developed. If the owner of land property in that area agrees to preserve land, they may be eligible to receive a tax credit in an amount associated with the value of the land property.
+A common tax credit is for land preservation. The inhabitants of a geographic area recognize that their shared quality of life may be positively impacted if more land was preserved rather than developed. If the owner of land property in that area agrees to preserve land, they may be eligible to receive a tax credit in an amount associated with the value of the land property. However, some owners of tax credits do not have enough tax liability to take full advantage of the reward. Because of this, a number of states allow credits to be transferred. State transferable tax credits are typically bought and sold at a discount. 
 
-A tax credit only reduces the tax liability for the holder of the tax credit, and they expire at various durations. A common scenario is for a taxpayer to earn tax credits well beyond their tax liability over the effective lifespan of a credit. However, some owners of tax credits do not have enough tax liability to take full advantage of the reward. Because of this, a number of states allow credits to be transferred. State transferable tax credits are typically bought and sold at a discount.
-
-Historically, the tax credit industry’s transfer process has been opaque. Due to a lack of trust between buyers and sellers, accountants and lawyers act as middlemen. This added financial and procedural cost creates a barrier for the majority of taxpayers to enter the tax credit market. What remains is a tight-knit group of wealthy buyers, sellers, and policymakers.
+Historically, the tax credit industry’s transfer process has been deeply inneficient. Due to a lack of trust between buyers and sellers, accountants and lawyers act as middlemen. This added financial and procedural cost creates an entry barrier for the majority of taxpayers into the tax credit market. What remains is a tight-knit group of wealthy buyers, sellers, and policymakers.
 
 ### Product
 
 [Afloat](https://stayafloat.io/#/) uses blockchain technology to add trust and liquidity to the market, allowing smaller fractionable shares of tax credits to be transferred. So far, Afloat has facilitated the transfer of $145,000 worth of tax credits between multiple buyers and sellers, 90% with whom Afloat anticipates an ongoing relationship. One of the platform’s sellers is an international company with over 10,000 employees, and the value of tax credits purchased per buyer has so far ranged between less than $2,000 and over $70,000.
 
-Afloat has a total of 108 active users. Many of these are CPAs (public accountants) and represent a network of taxpayers (credit buyers and sellers). We purposefully haven't had any marketing campaigns, and have been cautious with growth so far. We had a large batch of users enroll in December 2021 (end of tax year) and material increase (4x) year over year."
+Afloat has 108 active users. Many of these are CPAs (public accountants) and represent a network of taxpayers (credit buyers and sellers). We purposefully haven't had any marketing campaigns, and have been cautious with growth so far. We had a large batch of users enroll in December 2021 (end of tax year) and material increase (4x) year over year."
 
 Having started in the US, Afloat, Inc., a Wyoming company, is compliant with existing federal, state, and local regulations and takes care of the entire transfer process with the following functions:
 
@@ -72,17 +70,16 @@ Tax credits, as a socioeconomic tool, are very similar to concepts found in the 
 
 ### Migration
 
-Initially we will be run on a standalone chain as a pallet. This provides the most latitude and flexibility. The initial phase is primarily focused on function, usability, and ensuring the core asset type design is secure and composable. It also includes existing user and asset migration. We will have a one-time process per user to teleport their account and assets. Most likely, we will not teleport any orders or redemptions currently in process. They would close out on the old platform, and users would create new ones after they migrate.
+Initially we will run on a standalone chain as a pallet. This provides the most latitude and flexibility. The initial phase is primarily focused on function, usability, and ensuring the core asset type design is secure and composable. It also includes existing user and asset migration. We will have a one-time process per user to teleport their account and assets. Most likely, we will not teleport any orders or redemptions currently in process. They would close out on the old platform, and users would create new ones after they migrate.
 
 We did not include any scope or fund request in the proposal related to the migration work. The scope of the w3f proposal is focused on building the open source components. These will be available for the community, and Afloat will be an implementation of them. Making the pallets and tooling as general purpose as possible should help with reusability, for us and other projects.
 
 To handle fractional tax credits in Substrate we are using "fruniques". That is our name for *FRactional UNIQUES*. It'll be compatible with the Uniques pallet and eventually with RMRK as well. It allows the user to spawn a new NFT from an existing NFT, repeatedly, while specifying an associated amount. The integrity of the total quantity must remain intact, along with metadata, but each of these NFTs can be priced, transferred, and redeemed individually.
 
-An earlier implementation of this used a fungible token to represent the parts of the tax credit, but we've found that fractional NFTs fit the mental model a bit better and also fits more ergonomically in existing tools. A user is buying a "thing", see that thing in their wallet, where they may hold 7 of them. Holding various quantities of 7 different fungible tokens seemed to increase the complexity more than necessary. This is a design element we frequently brainstorm on though. In a future release, it may be useful to have fruniques support both use cases.
+An earlier implementation of this used a fungible token to represent the parts of the tax credit, but we've found that fractional NFTs fit the mental model a bit better and more ergonomically in existing tools. A user is buying a "thing", see that thing in their wallet, where they may hold 7 of them. Holding various quantities of 7 different fungible tokens seemed to increase the complexity more than necessary. This is a design element we frequently brainstorm on though. In a future release, it may be useful to have fruniques support both use cases.
 
-### Architecture
+### Workflow
 
-This is the medium term vision of Afloat's architecture.
 <p align="center">
   <img width="700" src="https://user-images.githubusercontent.com/7217054/160020369-b64ae31d-8cc5-49ce-8c4d-82dea85546cf.png">
 </p>
@@ -91,9 +88,9 @@ This is the medium term vision of Afloat's architecture.
 
 ## Ecosystem Fit
 
-Afloat's primary target audience are any user that want to buy and sell tax credits. The benefits from this mgiration, besides security, is compatibility for liquidity. Tax Credits trade with a heavy discount to face value, and Polkadot participants will likely want to hold them during that lifespan even if they aren't the final redeemer.  If a 5-year expiration credit is priced at $0.60-to-the-dollar by its impatient originator, it could be purchased via a more patient market maker to perhaps be sold at $0.90 in year 3 or 4, just as an example.
+Afloat serves tax payers that want to buy and/or sell tax credits. These users will benefit by Polkadot's improved security and by gaining compatibility for liquidity. Tax Credits trade with a heavy discount to face value, and Polkadot participants will likely want to hold them during that lifespan even if they aren't the final redeemer. If a 5-year expiration credit is priced at $0.60-to-the-dollar by its impatient originator, it could be purchased via a more patient market maker to perhaps be sold at $0.90 in year 3 or 4, just as an example.
 
-The secondary target audience are the community of developers that will benefit by leveraging the open source components and integrating with Afloat.
+The secondary target audience are the community of developers that will benefit by leveraging the open source components and integrations with tax credit fruniques.
 
 ### Community
 
@@ -145,18 +142,28 @@ There is a huge educational and technological divide in the learning curve for a
 
 ### Team's experience
 
-Louise Reed has years of experience as a CPA and a succesful private practice with a wide range of customers inlcuding multinationals. For the last X years she has focused on tax credits and when she learned about blockchain saw an opportunity to launch a product.
+Louise Reed has years of experience as a CPA and a succesful private practice with a wide range of customers inlcuding multinationals. For the last X years she has focused on tax credits. Under her leadership, Afloat built the current aplication (private ethereum clone) with an in-house team and succesfully launched on 2021.
 
-Afloat built the current aplication (private ethereum clone) with an in-house team of jr. developers, project manager and designer. It succesfully launched in 2021 and has live customers that use the plattform to sell and buy tax credits.
+Afloat is partnering with Hashed Systems DAO LLC, a substrate development team with years of experience building blockchain applications. They have worked on substrate and Polkadot since spring 2021. Their developers completed Brian Chen's course and have experience running substrate chains and have significant experience working with the Uniques, Identity and Node-authorization pallets. Additional relevant experience below:
 
-Afloat is partnering with Hashed Systems DAO LLC, a substrate development team with years of experience building blockchain applications. They have worked on substrate and Polkadot since spring 2021. Their developers completed Brian Chen's course in mid 2021 and have experience running substrate chains and have significant experience working with the Uniques, Identity and Node-authorization pallets.
+
+[Hypha DAO](https://dho.hypha.earth/#/)
+- Smart contracts
+- Graph data caching infraestructure to accelerate performance
+- [Double Entry accounting](https://us02web.zoom.us/rec/share/eRqiBvq-dsV0L_hEjW5e8DWNYQlUn2bLhI8-86jkRVwdXiN3TiD5edym17ubCd9R.QhKQw_Byy0t5_8SW?startTime=1647371674000) Passcode: .V$C#Br2
+
+https://joinseeds.earth/
+- Smart contracts
+- [Economic Simulator](https://seeds-sim.hypha.earth/dashboard)
+- Mobile aplication
+
 
 ### Relevant profile links
 
 - Louise Reed CPA website: https://louisereedcpa.com/
 - Louise Reed LinkedIn: https://www.linkedin.com/in/louisewreed/
 - Abel on Github: https://github.com/amatsonkali
-- Jose Maria on Github: https://github.com/jmgayosso?tab=overview
+- Jose Maria on Github: https://github.com/jmgayosso and Gitlab: https://gitlab.com/jmgayosso
 - Hashed website: https://hashed.io/
 - Erick on GitHub: https://github.com/tlacloc
 
@@ -164,13 +171,13 @@ Afloat is partnering with Hashed Systems DAO LLC, a substrate development team w
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
-- **Total Estimated Duration:** 3 months
+- **Total Estimated Duration:** 13 weeks
 - **Full-Time Equivalent (FTE):**  2.5 FTE (across 5 contributors)
 - **Total Costs:** 46,200 USD
 
 #### Languages
 - All pallets and any associated backend services will be developed in Rust.
-- The front end will be Angular and Vue 
+- The front end will be Angular 
 
 ### Milestone 1 — User onboarding (set and verify identity with gatekeeper parameters) and slides.
 - **Estimated duration:** 5 weeks
@@ -239,9 +246,11 @@ Afloat is partnering with Hashed Systems DAO LLC, a substrate development team w
 
 ### Immediate Use
 
-Afloat users will immediatly benefit from a full blokchain workflow. The existing Ethereum implementation relies on a few manual steps. The level of trust, reliability and visibility that this migration brings will strenthen Afloat to continue it's user adoption.
+All Afloat users will be migrated to the subtrate aplication and benefit from the identity and security enhacements. Afloat will gain access to the full substrate ecosystem and viceversa. 
 
 ### Next Phases
+
+This proposal covers Afloat's migration of the current functionality. Below are future phases that expand it:
 
 - Phase 2: User scenarios: registration/approval of new appraisers, request appraisal of NFT, appraise NFT, review and compensate appraiser
 
@@ -281,7 +290,6 @@ Blockchain Friendly State Breakdown
 </p>
 <br />
 https://www.investopedia.com/news/majority-us-states-are-still-acknowledge-cryptocurrencies/
-
 
 
 
