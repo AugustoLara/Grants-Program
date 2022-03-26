@@ -147,10 +147,7 @@ Louise Reed has years of experience as a CPA and a succesful private practice wi
 Afloat is partnering with Hashed Systems DAO LLC, a substrate development team with years of experience building blockchain applications. They have worked on substrate and Polkadot since spring 2021. Their developers completed Brian Chen's course and have experience running substrate chains and have significant experience working with the Uniques, Identity and Node-authorization pallets. Additional relevant experience below:
 
 
-[Hypha DAO](https://dho.hypha.earth/#/)
-- Smart contracts
-- Graph data caching infraestructure to accelerate performance
-- [Double Entry accounting](https://us02web.zoom.us/rec/share/eRqiBvq-dsV0L_hEjW5e8DWNYQlUn2bLhI8-86jkRVwdXiN3TiD5edym17ubCd9R.QhKQw_Byy0t5_8SW?startTime=1647371674000) Passcode: .V$C#Br2
+[Hypha DAO](https://dho.hypha.earth/#/): Development of most smart contracts and front end that enables the creatin of flexibles roles, assignemtns and contributions with recurring payments. A graph data layer was implemented to improve web application performance. Design and build a [Double Entry accounting](https://us02web.zoom.us/rec/share/eRqiBvq-dsV0L_hEjW5e8DWNYQlUn2bLhI8-86jkRVwdXiN3TiD5edym17ubCd9R.QhKQw_Byy0t5_8SW?startTime=1647371674000) (Passcode: .V$C#Br2) plattform that streams wallet activity, support token price history, reporting and currency conversion.
 
 [SEED](https://joinseeds.earth/)
 - Smart contracts
