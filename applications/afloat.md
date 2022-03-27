@@ -73,7 +73,7 @@ To handle fractional tax credits in Substrate we are using "fruniques". That is 
 
 An earlier implementation of this used a fungible token to represent the parts of the tax credit, but we've found that fractional NFTs fit the mental model a bit better and more ergonomically in existing tools. A user is buying a "thing", see that thing in their wallet, where they may hold 7 of them. Holding various quantities of 7 different fungible tokens seemed to increase the complexity more than necessary. This is a design element we frequently brainstorm on though. In a future release, it may be useful to have fruniques support both use cases.
 
-This proposal covers the migration or creation of the following workflows: 
+This proposal covers the migration or creation of the following: 
 
 1. User onboarding (set and verify identity with gatekeeper parameters) and slides. 
 2. Sign and Loginw with email.
@@ -81,14 +81,11 @@ This proposal covers the migration or creation of the following workflows:
 4. Support for encrypted files attached to tax credits
 5. Order matching (has to match the price but also the state and follow specific rules laid out by each jurisdiction)
 6. Sell the entire or a fraction of the tax credit to interested buyers using fruniques pallets.
-7. Asset redeption workflow (tax credits requre a 'redemption specialist')
-8. Automatic government form/PDF population to make tax credit transferability compatible with on-chain
-9. Freeze asset on-chain.
-
-- the ability to place BUY orders (treasury proposal is only selling things you own, like eBay)
-- order matching (has to match the price but also the state and follow specific rules laid out by each jurisdiction)
-- - and support for encrypted files attached to tax credits
-- launch materials, videos, speaking arrangements, etc
+7. Ability for sellers to place buy orders.
+8. Asset redeption workflow (tax credits requre a 'redemption specialist')
+9. Automatic government form/PDF population to make tax credit transferability compatible with on-chain
+10. Freeze asset on-chain.
+11. Launch materials, videos, speaking arrangements, 
 
 
 ### Workflow
@@ -129,6 +126,15 @@ Afloat would naturally bridge two opposing communities: accounting, the most tru
 #### Natural Use Case
 
 There is a huge educational and technological divide in the learning curve for accountants when it comes to blockchain, but Afloat adds an easy and natural way to learn.  Most people, including CPAs and businesses, tend to understand only what they can see and experience, and Afloat brings tangibility to an otherwise intangible industry.
+
+#### Scheduled Speaking 
+
+| Date of Talk | CPA Society | Location |
+| -----------: | ----------- | -------- |
+| 5/26/2022    | NC          | Greensboro |
+| 8/24/2022    | GA          | Atlanta |
+| 9/26/2022    | VA (+ VA Tech) | Roanoke |
+| 11/17/2022   | VA (+ VA Tech) | Virginia Beach |
 
 
 ## Team :busts_in_silhouette:
