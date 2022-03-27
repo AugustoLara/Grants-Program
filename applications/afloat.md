@@ -78,14 +78,14 @@ This proposal covers the migration or creation of the following:
 1. User onboarding (set and verify identity with gatekeeper parameters) and slides. 
 2. Sign and Loginw with email.
 3. Originate and configure a tax credit and create sales order for tax credits.
-4. Support for encrypted files attached to tax credits
-5. Order matching (has to match the price but also the state and follow specific rules laid out by each jurisdiction)
+4. Support for encrypted files attached to tax credits.
+5. Order matching (has to match the price but also the state and follow specific rules laid out by each jurisdiction).
 6. Sell the entire or a fraction of the tax credit to interested buyers using fruniques pallets.
 7. Ability for sellers to place buy orders.
-8. Asset redeption workflow (tax credits requre a 'redemption specialist')
-9. Automatic government form/PDF population to make tax credit transferability compatible with on-chain
+8. Asset redeption workflow (tax credits requre a 'redemption specialist').
+9. Automatic government form/PDF population to make tax credit transferability compatible with on-chain.
 10. Freeze asset on-chain.
-11. Launch materials, videos, speaking arrangements, 
+11. Launch materials, videos and speaking arrangements.
 
 
 ### Workflow
