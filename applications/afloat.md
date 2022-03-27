@@ -10,12 +10,7 @@
 
 [Afloat](https://stayafloat.io/#/) is one of the first real use-cases of blockchain technology in the accounting industry. It enables the fractional buying and selling of tax credits that historically have been inefficient, opaque and centralized. It has already processed tax credits ranging in orders from $2K -$70k USD.
 
-Afloat was built on a private Ethereum clone but wants to migrate to Polkadot due to it's technology, identity management and community. Parachains like Kilt and their identity services would be crucial at validating government roles and professional certifications like accountants and institutional sellers. This proposal covers the migration or creation of the following workflows: 
-
-1. User onboarding (set and verify identity with gatekeeper parameters) and slides. 
-2. Originate and configure a tax credit and create sales order for tax credits.
-3. Sell the entire or a fraction of the tax credit to interested buyers using fruniques pallets.
-4. Redeem the tax credit and confirm redemption and freeze asset on-chain.
+Afloat was built on a private Ethereum clone but wants to migrate to Polkadot due to it's technology, identity management and community. Parachains like Kilt and their identity services would be crucial at validating government roles and professional certifications like accountants and institutional sellers. 
 
 ## Project Details
 
@@ -77,6 +72,24 @@ We did not include any scope or fund request in the proposal related to the migr
 To handle fractional tax credits in Substrate we are using "fruniques". That is our name for *FRactional UNIQUES*. It'll be compatible with the Uniques pallet and eventually with RMRK as well. It allows the user to spawn a new NFT from an existing NFT, repeatedly, while specifying an associated amount. The integrity of the total quantity must remain intact, along with metadata, but each of these NFTs can be priced, transferred, and redeemed individually.
 
 An earlier implementation of this used a fungible token to represent the parts of the tax credit, but we've found that fractional NFTs fit the mental model a bit better and more ergonomically in existing tools. A user is buying a "thing", see that thing in their wallet, where they may hold 7 of them. Holding various quantities of 7 different fungible tokens seemed to increase the complexity more than necessary. This is a design element we frequently brainstorm on though. In a future release, it may be useful to have fruniques support both use cases.
+
+This proposal covers the migration or creation of the following workflows: 
+
+1. User onboarding (set and verify identity with gatekeeper parameters) and slides. 
+2. Sign and Loginw with email.
+3. Originate and configure a tax credit and create sales order for tax credits.
+4. Support for encrypted files attached to tax credits
+5. Order matching (has to match the price but also the state and follow specific rules laid out by each jurisdiction)
+6. Sell the entire or a fraction of the tax credit to interested buyers using fruniques pallets.
+7. Asset redeption workflow (tax credits requre a 'redemption specialist')
+8. Automatic government form/PDF population to make tax credit transferability compatible with on-chain
+9. Freeze asset on-chain.
+
+- the ability to place BUY orders (treasury proposal is only selling things you own, like eBay)
+- order matching (has to match the price but also the state and follow specific rules laid out by each jurisdiction)
+- - and support for encrypted files attached to tax credits
+- launch materials, videos, speaking arrangements, etc
+
 
 ### Workflow
 
