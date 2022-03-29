@@ -240,7 +240,7 @@ Afloat is partnering with Hashed Systems DAO LLC, a substrate development team w
 | 0c. | Testing | Unit testing will be applied to ensure reliability. Documentation of tests and results will be provided |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** in English and Spanish that explains what was built and how it can bennefit other projects
-| 1. | Substrate Modules | 1. Web client and pallet support for fractionalizing a Tax Credit NFT. Users may specify the % and/or direct amount for the newly spawned NFT. <br />2. Web client for buyer to buy a listed Tax Credit NFT and make an offer. <br />3. Order matching (has to match the price but also the state and follow specific rules laid out by each jurisdiction).<br />4. Sell the entire or a fraction of the tax credit to interested buyers using fruniques pallets.<br />4. Ensure the marketplace correctly calculates appropriate commissions and fees.|  
+| 1. | Substrate Modules | 1. Web client and pallet support for fractionalizing a Tax Credit NFT. Users may specify the % and/or direct amount for the newly spawned NFT. <br />2. Web client for buyer to buy a listed Tax Credit NFT and make an offer. <br />3. Order matching (has to match the price but also the state and follow specific rules laid out by each jurisdiction).<br />4. Sell the entire or a fraction of the tax credit to interested buyers using fruniques pallets.<br />5. Ensure the marketplace correctly calculates appropriate commissions and fees.|  
 
 ### Milestone 4 — Redeem the tax credit and confirm redemption and freeze/burn asset on-chain.
 - **Estimated duration:** 2 weeks
