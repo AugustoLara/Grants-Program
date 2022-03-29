@@ -76,14 +76,14 @@ An earlier implementation of this used a fungible token to represent the parts o
 This proposal covers the migration or creation of the following: 
 
 1. User onboarding (set and verify identity with gatekeeper parameters) and slides. 
-2. Sign and Loginw with email.
+2. Sign and Login with email.
 3. Originate and configure a tax credit and create sales order for tax credits.
 4. Support for encrypted files attached to tax credits.
 5. Order matching (has to match the price but also the state and follow specific rules laid out by each jurisdiction).
 6. Sell the entire or a fraction of the tax credit to interested buyers using fruniques pallets.
-7. Ability for sellers to place buy orders.
+7. Ability for buyers to place buy orders.
 8. Asset redeption workflow (tax credits requre a 'redemption specialist').
-9. Automatic government form/PDF population to make tax credit transferability compatible with on-chain.
+9. Automatic government form/PDF population to make tax credit compatible with on-chain.
 10. Freeze asset on-chain.
 11. Launch materials, videos and speaking arrangements.
 
@@ -98,7 +98,7 @@ This proposal covers the migration or creation of the following:
 
 ## Ecosystem Fit
 
-Afloat serves tax payers that want to buy and/or sell tax credits. These users will benefit by Polkadot's improved security and by gaining compatibility for liquidity. Tax Credits trade with a heavy discount to face value, and Polkadot participants will likely want to hold them during that lifespan even if they aren't the final redeemer. If a 5-year expiration credit is priced at $0.60-to-the-dollar by its impatient originator, it could be purchased via a more patient market maker to perhaps be sold at $0.90 in year 3 or 4, just as an example.
+Afloat serves tax payers that want to buy and/or sell tax credits. These users will benefit by Polkadot's improved security and by gaining compatibility for liquidity. Polkadot will benefit from the influx of non-technical users into the ecosystem. Tax Credits trade with a heavy discount to face value, and Polkadot participants will likely want to hold them during that lifespan even if they aren't the final redeemer. If a 5-year expiration credit is priced at $0.60-to-the-dollar by its impatient originator, it could be purchased via a more patient market maker to perhaps be sold at $0.90 in year 3 or 4, just as an example.
 
 The secondary target audience are the community of developers that will benefit by leveraging the open source components and integrations with tax credit fruniques.
 
@@ -158,12 +158,12 @@ Louise Reed is scheduled to speak at the following Certified Public Accountat So
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** 6118 Saint Andrews Lane, Richmond, VA 23226
+- **Registered Legal Entity:** Afloat, Inc.
 
 ### Team's experience
 
-Louise Reed has years of experience as a CPA and a succesful private practice with a wide range of customers inlcuding multinationals. For the last X years she has focused on tax credits. Under her leadership, Afloat built the current aplication (private ethereum clone) with an in-house team and succesfully launched on 2021.
+Louise Reed has years of experience as a CPA and a succesful private practice with a wide range of customers inlcuding multinationals. For the last X years she has focused on tax credits. Under her leadership, Afloat built the current aplication (private ethereum clone) with an in-house team and succesfully launched on 2021. [Awards](https://stayafloat.io/#/media)
 
 Afloat is partnering with Hashed Systems DAO LLC, a substrate development team with years of experience building blockchain applications. They have worked on substrate and Polkadot since spring 2021. Their developers completed Brian Chen's course and have experience running substrate chains and have significant experience working with the Uniques, Identity and Node-authorization pallets. Additional relevant experience below:
 
@@ -283,7 +283,7 @@ Asset Grader to review materials and provide judgment
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** 
-
+Raul Romanutti recomended the program on a call with Louise Reed, Max Gravitt and Augusto Lara on March 21st, 2022.
 
 ### Additional Context
 #### State Tax Credit Breakdown
